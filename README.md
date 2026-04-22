@@ -1,4 +1,4 @@
-1. (Install) Run uv sync to get all the dependencies
+1. (Install and) Run uv sync to get all the dependencies
 ```
 uv sync
 ```
