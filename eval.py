@@ -173,12 +173,12 @@ def run_evals():
     save_dir = Path(f"output/{date_string}")
 
     # QWEN GRPOBLIT STRONGREJECT
-    qwen_grpoblit_strong_reject = run_strong_reject_eval.remote(QWEN_ID, peft = str(MODEL_OUTPUT_DIR / "2026-04-21_21-05-09"))
-    save_json(save_dir / "qwen_grpoblit_strong_reject.json", qwen_grpoblit_strong_reject)
+    # qwen_grpoblit_strong_reject = run_strong_reject_eval.remote(QWEN_ID, peft = str(MODEL_OUTPUT_DIR / "2026-04-22_21-03-06"))
+    # save_json(save_dir / "qwen_grpoblit_strong_reject.json", qwen_grpoblit_strong_reject)
 
     # QWEN GRPOBLIT MMLU 
-    qwen_grpoblit_mmlu = run_mmlu_eval.remote(QWEN_ID, peft = str(MODEL_OUTPUT_DIR / "2026-04-21_21-05-09"))
-    save_json(save_dir / "qwen_grpoblit_mmlu.json", qwen_grpoblit_mmlu)
+    qwen_grpoblit_mmlu = run_mmlu_eval.remote(QWEN_ID, peft = str(MODEL_OUTPUT_DIR / "2026-04-22_21-03-06"))
+    # save_json(save_dir / "qwen_grpoblit_mmlu.json", qwen_grpoblit_mmlu)
 
     # QWEN STRONGREJECT
     # qwen_strong_reject = run_strong_reject_eval.remote(QWEN_ID)
