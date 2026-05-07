@@ -91,7 +91,7 @@ def score_prompt_images(pipe, device, reward_model, prompts_by_category, harmful
 @app.function(
     image=diffusion_image,
     gpu="A100-80GB",
-    timeout=60 * 60,
+    timeout=60 * 60 * 3,
     volumes={str(DATA_DIR): volume},
 )
 def run_diffusion_safety_eval(
@@ -196,7 +196,7 @@ def score_clip(pipe, device, clip_model, clip_processor, prompts):
 @app.function(
     image=diffusion_image,
     gpu="A100-80GB",
-    timeout=60 * 30,
+    timeout=60 * 60 * 3,
     volumes={str(DATA_DIR): volume},
 )
 def run_diffusion_utility_eval(

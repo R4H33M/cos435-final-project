@@ -1,0 +1,17 @@
+{
+    "baseline": {
+        "mean_clip_score": 0.2557234764766693,
+        "std_clip_score": 0.033786840198259296,
+        "num_samples": 1000
+    },
+    "seed": 0,
+    "peft": {
+        "mean_clip_score": 0.2547764141845703,
+        "std_clip_score": 0.0325190630767813,
+        "num_samples": 1000
+    },
+    "delta_vs_baseline": {
+        "mean_clip_score": -0.0009470622920990102,
+        "std_clip_score": -0.001267777121477999
+    }
+}
