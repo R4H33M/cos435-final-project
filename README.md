@@ -1,3 +1,4 @@
+# cos435-final-project
 1. (Install and) Run uv sync to get all the dependencies
 ```
 uv sync
@@ -14,4 +15,12 @@ uv run python3 -m modal setup
 HF_TOKEN=<token>
 ```
 
-4. Run with `uv run modal run eval.py`. TAKES A WHILE!
+---
+
+## LLM
+Run eval with `uv run modal run eval.py`. TAKES A WHILE!
+
+## DIFFUSION
+Run train with `uv run modal run grpoblit_diffusion.py`
+
+Run eval with `uv run modal run eval_diffusion.py --peft /data/diffusion/grpoblit_output/<run_name>`
